@@ -1,0 +1,50 @@
+<html>
+<head>
+<script type="text/javascript">
+    (function(p,u,s,h){
+        p._pcq=p._pcq||[];
+        p._pcq.push(['_currentTime',Date.now()]);
+        s=u.createElement('script');
+        s.type='text/javascript';
+        s.async=true;
+        s.src='https://cdn.pushcrewstaging.com/js/ac95c00e2069123d9fec0d7926a5b710.js';
+        h=u.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s,h);
+    })(window,document);
+</script>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+    
+    <script>
+        var output = ''; 
+for (var key in localStorage) {
+  output = output+(key + ':' +localStorage[key])+'\n';
+}
+        
+document.getElementById("sid").innerHTML = window.localStorage.getItem("wingify_push_subscriber_id");
+document.getElementById("sid2").innerHTML = window.localStorage.getItem("wingify_push_subscriber_id");
+        
+console.log(output);
+$('#ls').html(output);
+        
+</script>
+</head>
+<body>
+<h1> Welcome to ORC 1 APP </h1>
+<div id="ls">
+    
+    Subscripton Id :  <p id="sid"></p>
+    Subscriptons Id :  <p id="sid2"></p>
+    
+    
+    
+    
+</div>
+    
+    
+    
+</body>
+</html>
